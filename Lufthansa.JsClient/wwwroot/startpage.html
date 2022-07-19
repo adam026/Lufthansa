@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>Hello World!!</h1>
+    <p>
+        Paragrafus
+    </p>
+    <div>
+        <p>Result: </p>
+
+        <p id="result"></p>
+    </div>
+    <section>
+    </section>
+    <ul id="listContent">
+        <li>list Item1</li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Header1</th>
+                <th>Header2</th>
+                <th>Header3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Item1</td>
+                <td>Item2</td>
+                <td>Item3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button onclick="AddItem('button')"> Add Item </button>
+</body>
+
+<script>
+    AddItem(2);
+
+    function AddItem(i) {
+        
+        var a = [12, 23, 32];
+        
+        var b = "Mari";
+        var b = 3;
+        
+        var c = 23;
+        var d = 12;
+        var e = b + (c + d);
+        var f = b + c + d;
+        var result = document.getElementById("result");
+        result.innerHTML += e;
+        result.innerHTML += f;
+        /*alert("AddItem called with: " + i);*/
+        var listContent = document.getElementById("listContent");
+        listContent.innerHTML += "<li>list Item2</li>";
+    }
+</script>
+</html>
